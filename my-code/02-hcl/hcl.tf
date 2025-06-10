@@ -6,12 +6,13 @@ terraform {
     }
   }
 }
-
+# this resource is managed by us
 resource "aws_s3_bucket" "my_bucket" {
   bucket = var.bucket_name
 }
 
-resource "aws_s3_bucket" "my_external_bucket" {
+# this resource is not managed by us, but we can reference it
+data "aws_s3_bucket" "my_external_bucket" {
   bucket = "not-managed-by-us"
 
 }
