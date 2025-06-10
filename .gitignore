@@ -2,6 +2,4 @@
 .terraform/
 **.tfstate*
 .prettierrc
-terraform-aws-networking-tf-course-main
-terraform-course-example-terraform-cloud-main
-terraform-course-main
+not-my-code
